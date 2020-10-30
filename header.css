@@ -1,0 +1,34 @@
+.logo-container {
+    width: 100%;
+}
+
+.nav-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    list-style-type: none;
+}
+
+.nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.header-desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.5s ease;
+    transform: translateY(-100%);
+}
+
+.logo-svg {
+    width: 236px;
+    height: 72px;
+}
+
+.logo-svg path,
+.logo-svg polygon {
+    fill: #fff;
+}
