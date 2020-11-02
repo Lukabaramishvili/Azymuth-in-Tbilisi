@@ -1,3 +1,7 @@
+:root {
+    --orange: #ff3c15;
+}
+
 body {
     font-family: 'HK-Grotesk-Medium', sans-serif;
     font-size: 18px;
@@ -28,14 +32,14 @@ a {
 
 .heading-orange {
     font-size: 120px;
-    -webkit-text-stroke-color: #FF3C15;
+    -webkit-text-stroke-color: var(--orange);
     margin-bottom: 3rem;
-    color: #FF3C15;
+    color: var(--orange);
 }
 
 .button {
     display: inline-block;
-    background-color: #FF3C15;
+    background-color: var(--orange);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     border: none;
@@ -49,4 +53,76 @@ a {
     margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+blockquote {
+    color: var(--orange);
+    font-size: 36px;
+}
+
+.cite {
+    display: inline-block;
+    color: var(--orange);
+    line-height: 1;
+    padding: 24px 18px;
+    border-radius: 100%;;
+    border: solid 3px var(--orange);
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+.speaker-image {
+    display: block;
+    margin-bottom: 12px;
+  }
+  
+  .speaker-name,
+  .speaker-title {
+    margin: 0;
+    line-height: 1.33;
+  }
+  
+  .speaker-title {
+    color: #979797;
+    font-family: 'HK-Grotesk-Regular', sans-serif;
+  }
+
+.schedule-container {
+    border: solid 3px var(--orange);
+    /* this gives us natural scrolling behavior on touch screens */
+    -webkit-overflow-scrolling: touch;
+}
+
+.schedule-container::-webkit-scrollbar {
+    width: 12px;
+    height: 14px;
+    background-color: transparent;
+}
+
+.schedule-container::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+    border: solid 2px #fff;
+}
+
+.schedule {
+    padding:48px 24px;
+}
+
+.schedule-time {
+    color: var(--orange);
+    font-size: 36px;
+    font-family: 'HK-Grotesk-Regular', sans-serif;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.schedule-day {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    padding: 24px;
+    color: #fff;
+    line-height: 1;
+    background-color: var(--orange);
+    text-align: center;
 }

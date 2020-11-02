@@ -32,3 +32,57 @@
 .logo-svg polygon {
     fill: #fff;
 }
+
+.header-desktop {
+    background-color: #fff;
+    padding: 20px;
+    z-index: 4;
+    box-shadow: 0 0 4px 0px rgba(65, 65, 65, 0.5);
+  }
+  
+  .header-desktop.visible {
+    transform: translateY(0);
+  }
+  
+  .header-desktop .nav-list {
+    align-items: center;
+  }
+  
+  .header-desktop .logo-container {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+  
+  .header-desktop .nav-item:last-of-type .nav-link {
+    color: var(--orange);
+  }
+  
+  .header-desktop .nav-link {
+    color: #414141;
+  }
+  
+  .header-desktop .logo-svg {
+    width: 131px;
+    height: 40px;
+  }
+  
+  .header-desktop .logo-svg path,
+  .header-desktop .logo-svg polygon {
+    fill: #414141;
+  }
+  
+  @media (max-width: 800px) {
+    .header-desktop {
+      display: none !important;
+    }
+    .nav-item {
+      margin-left: 6px;
+      margin-right: 6px;
+      font-size: 14px;
+    }
+    .logo-svg {
+      width: 131px;
+      height: 40px;
+    }
+  }
