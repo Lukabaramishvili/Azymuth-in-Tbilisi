@@ -1,0 +1,69 @@
+.register-image {
+    background-image: url('/images/location.jpg');
+    background-position: center bottom;
+}
+
+input {
+    border: none;
+    line-height: 1.5;
+    font-size: 16px;
+    height:48px;
+    width: 100%;
+    padding: 0 12px;
+    outline: none;
+    color: #32325d;
+}
+
+input::placeholder {
+    color: #aab7c4
+}
+
+.bc {
+    background-color: #ffe6dd;
+}
+
+.register {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.front,
+.back {
+    grid-area: 1/1;
+}
+
+.front {
+    transition: transform 0.5s ease;
+}
+
+.front.slide-up {
+    transform: translateY(-100%);
+}
+
+.button {
+    cursor: pointer;
+    outline: none;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--orange);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    padding: 24px 72px;
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+}
+
+.button-small {
+    font-size: 14px;
+    padding: 12px 20px;
+}
+
+.button-outline {
+    background-color: transparent;
+    border: solid 2px var(--orange);
+    color: var(--orange);
+}

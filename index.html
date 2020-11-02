@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/fonts.css"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/header.css"><link rel="stylesheet" href="/basscss-grid.css">
+    <link rel="stylesheet" href="/fonts.css"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/header.css"><link rel="stylesheet" href="/basscss-grid.css"><link rel="stylesheet" href="/register.css">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
     <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
 
@@ -184,6 +184,41 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div id="register">
+        <h1 class="heading heading-orange">
+          Register
+        </h1>
+      
+        <div class="flex flex-wrap mb4 mb5-ns">
+          <div class="col-12 sm-col-6 cover register-image"></div>
+          <div class="col-12 sm-col-6 register relative bc orange">
+            <div class="front location flex flex-wrap pa4 items-center bc relative z-2 col-12">
+              <p class="mt0 mb4 col-12">3 March, 2018
+                <br> Melbourne, Australia
+              </p>
+              <p class="mt0 mb4 col-12">Fitzroy Social
+                <br> 222 Brunswick St, Fitzroy VIC 3065
+              </p>
+              <button class="button button-small button-outline register-button">Register</button>
+            </div>
+            <form action="https://api.superhi.com/api/test/orders" class="back form z-1 pa4 col-12" id="payment-form">
+              <div class="spinner"></div>
+              <h3 class='mt0 mb2 form-title'>Your details</h3>
+              <div class='form-fields'>
+                <input name="name" class="mb2 db" placeholder="Name" id="name">
+                <input name="email" class="mb2 db" placeholder="Email" id="email">
+                <div id="card-element" class="mb2"></div>
+                <div id="card-errors" role="alert"></div>
+                <div class="pt2">
+                  <button class="button button-small">Buy ticket for $100 AUD</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      
       </div>
 
     </div>
