@@ -13,3 +13,8 @@ desktopHeader.innerHTML = header.innerHTML;
 inView('.header')
     .on('enter', el => desktopHeader.classList.remove('visible'))
     .on('exit', el => desktopHeader.classList.add('visible'));
+
+VanillaTilt.init(document.querySelectorAll(".image"), {
+    max: 25,
+    speed: 400
+    });

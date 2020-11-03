@@ -127,3 +127,13 @@ blockquote {
     background-color: var(--orange);
     text-align: center;
 }
+
+.footer {
+    background-color: #222;
+}
+
+.footer-link {
+    width: 131px;
+    height: 40px;
+    background-image: url('images/logo.svg');
+}
