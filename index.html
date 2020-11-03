@@ -88,7 +88,7 @@
             <div class='col-12 sm-col-6 md-col-5 pt5-m pt5-1 mb4 mb0-ns'>
                 <img src="/images/about-1.jpg" class="image fade db">
             </div>
-            <div class='col-12 sm-col-6 md-col-4'>
+            <div class='col-12 sm-col-6 md-col-4 mb4 mb0-ns'>
                 <img src="/images/about-2.jpg" class="image fade db">
             </div>
         </div>
@@ -107,7 +107,7 @@
           </div>
       </div>
 
-      <div class="speakers mb4 mb5-ns" id="speakers">
+      <div class="speakers mb4 mb5-ns fade" id="speakers">
         <h1 class="heading heading-orange ">
           Speakers
         </h1>
@@ -152,7 +152,7 @@
         </div>
       </div>
 
-      <div class='about mb4 mb5-ns' id='about'>
+      <div class='about mb4 mb5-ns' id='schedule'>
         <h1 class='heading heading-orange'>
           Schedule
         </h1>
@@ -203,21 +203,35 @@
               </p>
               <button class="button button-small button-outline register-button">Register</button>
             </div>
-            <form action="https://api.superhi.com/api/test/orders" class="back form z-1 pa4 col-12" id="payment-form">
-              <div class="spinner"></div>
-              <h3 class='mt0 mb2 form-title'>Your details</h3>
-              <div class='form-fields'>
-                <input name="name" class="mb2 db" placeholder="Name" id="name">
-                <input name="email" class="mb2 db" placeholder="Email" id="email">
-                <div id="card-element" class="mb2"></div>
-                <div id="card-errors" role="alert"></div>
-                <div class="pt2">
-                  <button class="button button-small">Buy ticket for $100 AUD</button>
-                </div>
+            <!-- Payment Form -->
+            <form
+            action="https://api.superhi.com/api/test/orders"
+            class="back form z-1 pa4 col-12"
+            id="payment-form"
+          >
+            <div class="spinner"></div>
+            <h3 class="mt0 mb2 form-title">Your details</h3>
+            <div class="form-fields">
+              <!-- the required attribute makes the form unable to submit unless the fields are filled -->
+              <input name="name" class="mb2 db" placeholder="Name" id="name" required />
+              <input
+                name="email"
+                class="mb2 db"
+                placeholder="Email"
+                id="email"
+                required
+                type="email"
+              />
+              <div id="card-element" class="mb2"></div>
+              <div id="card-errors" role="alert"></div>
+              <div class="pt2">
+                <button class="button button-small">Buy ticket for $100 AUD</button>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
+      </div>
+    </div>
       
       </div>
 
@@ -246,6 +260,7 @@
       </div>
     </footer>
 
+  <script src="https://js.stripe.com/v3/"></script>
   <script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
   <script src="in-view.js"></script>
   <script src="tilt.js"></script>

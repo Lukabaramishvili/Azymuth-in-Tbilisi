@@ -137,3 +137,42 @@ blockquote {
     height: 40px;
     background-image: url('images/logo.svg');
 }
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 16px;
+        background-size: auto 120vh;
+    }
+    .heading {
+        font-size: 72px;
+        -webkit-text-stroke-width: 3px;
+    }
+    .button {
+        padding: 18px 32px;
+    }
+    .heading-orange {
+        margin-bottom: 24px;
+    }
+    blockquote {
+        line-height: 1.2;
+    }
+    .schedule-day {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .heading {
+        font-size: 40px;
+        -webkit-text-stroke-width: 1px;
+    }
+}
