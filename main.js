@@ -1,7 +1,4 @@
 
-//we grab our header and our desktop header
-//we insert the contents of our header into the desktop one
-
 const header = document.querySelector('.header');
 const desktopHeader = document.querySelector('.header-desktop');
 
@@ -57,13 +54,11 @@ const style = {
   }
 }
 
-// pick the form
 const form = document.querySelector('#payment-form')
 
 // get the error tag
 const errorEl = form.querySelector('#card-errors')
 
-// get the inputs
 const nameEl = form.querySelector('#name')
 const emailEl = form.querySelector('#email')
 
@@ -133,11 +128,7 @@ const stripeHandle = function(paymentMethod) {
         email: emailEl.value,
         // not a token but a payment method now!
         stripe_payment_method: paymentMethod.id
-        // IF you wanna put their own stripe secret key in,
-        // USUALLY DONT DO THIS, comment next line if you wanna test
         // stripe_secret_key: "sk_test_asdf"
-        // BUT DONT PUT YOUR SECRET KEY IN JS ANYWHERE
-        // BECAUSE PEOPLE WILL STEAL YO MONEY!
       }
     })
   })
@@ -180,19 +171,12 @@ const stripeHandle = function(paymentMethod) {
     })
 }
 
-// grab all the anchor tags on the page
 const anchors = document.querySelectorAll('a')
-// loop over them
 anchors.forEach(anchor => {
-  // listen for clicks on each one
   anchor.addEventListener('click', event => {
-    // grab the href attribute
     const href = anchor.getAttribute('href')
-    // if the href starts with a #
     if (href.charAt(0) === '#') {
-      // stop the default action
       event.preventDefault()
-      // find the element the href points to and scroll it into view
       document.querySelector(href).scrollIntoView({
         behavior: 'smooth'
       })
