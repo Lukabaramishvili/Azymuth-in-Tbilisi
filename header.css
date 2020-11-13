@@ -9,7 +9,7 @@
 }
 
 .nav-link {
-    color: #fff;
+    color: var(--black);
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }

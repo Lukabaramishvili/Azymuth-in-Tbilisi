@@ -1,5 +1,6 @@
 :root {
     --orange: #ff3c15;
+    --black: #000000;
 }
 
 body {
@@ -21,10 +22,10 @@ a {
 }
 
 .heading {
-    color: #fff;
+    color: var(--black);
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: var(--black);
 
     font-family: 'HK-Grotesk-Bold', sans-serif;
     font-size: 110px;
@@ -136,7 +137,7 @@ blockquote {
 .footer-link {
     width: 150px;
     height: 90px;
-    background-image: url('images/lyra-logo.svg');
+    background-image: url('images/logo-footer.svg');
 }
 
 .fade {
