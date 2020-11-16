@@ -9,6 +9,10 @@
     padding: 8px;
 }
 
+.nav-item:last-of-type .nav-link {
+  color: var(--orange);
+}
+
 .nav span {
   border-bottom: 1px solid black;
 }
@@ -32,10 +36,6 @@
     transform: translateY(-100%);
 }
 
-.header span {
-  /* border-bottom: 1px solid black; */
-}
-
 .logo-svg {
     width: 236px;
     height: 72px;
@@ -48,7 +48,7 @@
 
 .header-desktop {
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     z-index: 4;
     box-shadow: 0 0 4px 0px rgba(65, 65, 65, 0.5);
   }
@@ -59,6 +59,11 @@
   
   .header-desktop .nav-list {
     align-items: center;
+    margin: 0;
+  }
+
+  .header-desktop span {
+    border-bottom: none;
   }
   
   .header-desktop .logo-container {
