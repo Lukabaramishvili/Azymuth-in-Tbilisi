@@ -39,6 +39,10 @@ a {
     color: var(--orange);
 }
 
+.intro-date {
+    border-top: 1px solid black;
+}
+
 .button {
     display: inline-block;
     background-color: var(--orange);
@@ -128,6 +132,11 @@ blockquote {
     line-height: 1;
     background-color: var(--orange);
     text-align: center;
+}
+
+.after-img {
+    width: 453px;
+    height: 557px;
 }
 
 .footer {

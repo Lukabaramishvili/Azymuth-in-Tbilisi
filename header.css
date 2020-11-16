@@ -8,6 +8,10 @@
     list-style-type: none;
 }
 
+.nav-item :hover {
+  color: rgb(174, 174, 174);
+}
+
 .nav-link {
     color: var(--black);
     text-transform: uppercase;
@@ -21,6 +25,10 @@
     width: 100%;
     transition: transform 0.5s ease;
     transform: translateY(-100%);
+}
+
+.header span {
+  border-bottom: 1px solid black;
 }
 
 .logo-svg {
