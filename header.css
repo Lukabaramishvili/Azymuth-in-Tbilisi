@@ -6,10 +6,15 @@
     margin-left: 1rem;
     margin-right: 1rem;
     list-style-type: none;
+    padding: 8px;
 }
 
-.nav-item :hover {
-  color: rgb(174, 174, 174);
+.nav span {
+  border-bottom: 1px solid black;
+}
+
+.header {
+  border-bottom: 1px solid black;
 }
 
 .nav-link {
@@ -28,7 +33,7 @@
 }
 
 .header span {
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .logo-svg {
@@ -92,5 +97,19 @@
     .logo-svg {
       width: 131px;
       height: 40px;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .nav span{
+      justify-content: space-between;
+    }
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+    }
+    .nav-item {
+      margin-bottom: 0.5rem;
     }
   }

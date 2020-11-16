@@ -39,10 +39,6 @@ a {
     color: var(--orange);
 }
 
-.intro-date {
-    border-top: 1px solid black;
-}
-
 .button {
     display: inline-block;
     background-color: var(--orange);
