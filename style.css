@@ -86,7 +86,7 @@ blockquote {
   }
   
   .speaker-title {
-    color: #979797;
+    color: var(--orange);
     font-family: 'HK-Grotesk-Regular', sans-serif;
   }
 
