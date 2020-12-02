@@ -10,10 +10,8 @@ body {
     color: #414141;
 
     background-image: url('./images/cover.jpg');
-    background-color: #fefc71;
     background-size: 100% auto;
     background-position: center top;
-    background-repeat: no-repeat;
 }
 
 a {
