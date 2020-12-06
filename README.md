@@ -8,7 +8,8 @@ Azymuth is a legendary band, recognized as innovators of world fusion music.
 
 ## Technologies
 
-Javascript, HTML, CSS
+- Javascript, HTML, CSS
+- Stripe Payment Gateway
 
 ## Acknowledgment
 
